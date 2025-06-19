@@ -1,6 +1,7 @@
-connection: "edw-bi-looker-consumption"
+#connection: "edw-bi-looker-consumption"
+connection: "ttecsales-ro-looker-consumption"
 
-#include: "/views/*.view.lkml"                # include all views in the views/ folder in this project
+include: "/views/*.view.lkml"                # include all views in the views/ folder in this project
 # include: "/**/*.view.lkml"                 # include all views in this project
 # include: "my_dashboard.dashboard.lookml"   # include a LookML dashboard called my_dashboard
 
@@ -18,3 +19,6 @@ connection: "edw-bi-looker-consumption"
 #     sql_on: ${users.id} = ${orders.user_id} ;;
 #   }
 # }
+explore: new_clients {}
+explore: headcount {}
+explore: attrition {}
