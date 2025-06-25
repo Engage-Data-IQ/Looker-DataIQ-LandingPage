@@ -52,6 +52,17 @@ measure: final_new_clients {
 }
 
 
+  dimension: welcome_banner {
+    type: string
+    sql: 'dummy' ;;
+    html:
+          <div style='background-color: #1DA1DB; padding: 20px; color: white; font-family: Arial, sans-serif; border-radius: 4px;'>
+            <h2 style='margin: 0; font-weight: 500 ;text-align: left;'>👋 Welcome  {{ _user_attributes['name']}}</h2>
+            <p style='margin: 0px 0 0;font-size:18px;text-align: left;'>Access reports easily and access your data for dashboards.</p>
+          </div>
+         ;;
+  }
+
   set: detail {
     fields: [
       opportunity_name,

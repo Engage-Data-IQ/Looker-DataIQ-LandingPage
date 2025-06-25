@@ -1,7 +1,8 @@
 project_name: "landing_page"
 application: landing_page{
-  label: "test landing "
-  file: "landing_page.js"
+  label: "landing Page Final "
+  file: "landing_page_final.js"
+  #url: "http://localhost:8080/bundle.js"
   entitlements: {
     use_embeds: yes
     use_form_submit: yes
